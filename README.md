@@ -1,24 +1,31 @@
 # Hatch
 Hatch is a brute force tool that is used to brute force most websites
 
-# Update! v.1.3.1
-added arg support **yay**
 <br>
-  -h, --help            show this help message and exit<br>
-  -u USERNAME, --username=USERNAME Choose the username<br>
-  --usernamesel=USERNAMESEL Choose the username selector<br>
-  --passsel=PASSSEL     Choose the password selector<br>
-  --loginsel=LOGINSEL   Choose the login button selector<br>
-  --passlist=PASSLIST   Enter the password list directory<br>
-  --website=WEBSITE     choose a website<br>
-dont worry if you load up the tool without any args youll go to the default wizard!
-Also i removed the apt xvfb and pip2 pyvirtualdisplay
+Options:
+  -h, --help            show this help message and exit
+  -u USERNAME, --username=USERNAME
+                        Choose the username
+  --usernamesel=USERNAMESEL
+                        Choose the username selector
+  --passsel=PASSSEL     Choose the password selector
+  --loginsel=LOGINSEL   Choose the login button selector
+  --passlist=PASSLIST   Enter the password list directory
+  --website=WEBSITE     Choose a website
+  --usecombo=USECOMBO   Choose wether use a combo list or a single username
+                        with password list. Combo lists must be in
+                        username:password format
+  --combolist=COMBOLIST
+                        Pass a whole combolist file
+  --workers=WORKERS     Spawn # concurrent workers
+  --succfile=SUCCFILE   file used to store successfully forced accounts
+
 ## Installation Instructions
 ```
-git clone https://github.com/MetaChar/Hatch
+git clone https://github.com/EmaMaker/AccountChecker
 python2 main.py
 ```
-
+pcy
 ## Requirements
 ```
 pip2 install selenium
@@ -34,10 +41,10 @@ for this fork, create a folder in your C drive called 'webdrivers' and place the
 1). Find a website with a login page<br>
 2). Inspect element to find the Selector of the username form<br>
 3). Do the same for the password field<br>
-4). The the login form <br>
-5). When Asked put in the username to brute force<br>
-6). Watch it go!
+4). The login form <br>
+6). Choose wether to use combo list or password list with single username
+7). Provide list file and eventually the username
+8). Choose number of concurrent workers
 
-## How to use (Video)
-[![IMAGE ALT TEXT](https://i.ytimg.com/vi/Hd_kQVnajxk/1.jpg)](https://youtu.be/Hd_kQVnajxk "Video Title")
+6). Watch it go!
 
