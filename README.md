@@ -1,5 +1,5 @@
-# Hatch
-Hatch is a brute force tool that is used to brute force most websites
+# What is this?
+This is a universal account checker, bruteforce tool, based on Metachar's Hatch ( https://github.com/metachar/Hatch ) by nsgodshall ( https://github.com/nsgodshall/Hatch )
 
 <br>
 Options:
@@ -23,9 +23,9 @@ Options:
 ## Installation Instructions
 ```
 git clone https://github.com/EmaMaker/AccountChecker
-python2 main.py
+python2 ao/account_checker.py
 ```
-pcy
+
 ## Requirements
 ```
 pip2 install selenium
