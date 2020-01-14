@@ -3,22 +3,22 @@ This is a universal account checker, bruteforce tool, based on Metachar's Hatch 
 
 <br>
 Options:
-  -h, --help            show this help message and exit
-  -u USERNAME, --username=USERNAME
-                        Choose the username
+  -h, --help            show this help message and exit <br>
+  -u USERNAME, --username=USERNAME 
+                        Choose the username  <br>
   --usernamesel=USERNAMESEL
-                        Choose the username selector
-  --passsel=PASSSEL     Choose the password selector
-  --loginsel=LOGINSEL   Choose the login button selector
-  --passlist=PASSLIST   Enter the password list directory
-  --website=WEBSITE     Choose a website
-  --usecombo=USECOMBO   Choose wether use a combo list or a single username
-                        with password list. Combo lists must be in
-                        username:password format
+                        Choose the username selector <br>
+  --passsel=PASSSEL     Choose the password selector <br>
+  --loginsel=LOGINSEL   Choose the login button selector <br>
+  --passlist=PASSLIST   Enter the password list directory <br>
+  --website=WEBSITE     Choose a website <br>
+  --usecombo=USECOMBO   Choose wether use a combo list or a single username <br>
+                        with password list. Combo lists must be in 
+                        username:password format <br>
   --combolist=COMBOLIST
-                        Pass a whole combolist file
-  --workers=WORKERS     Spawn # concurrent workers
-  --succfile=SUCCFILE   file used to store successfully forced accounts
+                        Pass a whole combolist file <br>
+  --workers=WORKERS     Spawn # concurrent workers <br>
+  --succfile=SUCCFILE   file used to store successfully forced accounts <br>
 
 ## Installation Instructions
 ```
