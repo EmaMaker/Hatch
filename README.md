@@ -1,5 +1,5 @@
 # What is this?
-This is a universal account checker, bruteforce tool, based on Metachar's Hatch ( https://github.com/metachar/Hatch ) by nsgodshall ( https://github.com/nsgodshall/Hatch )
+This is a universal account checker, bruteforce tool, based on Metachar's Hatch ( https://github.com/metachar/Hatch ) forked by nsgodshall ( https://github.com/nsgodshall/Hatch )
 
 <br>
 Options:
