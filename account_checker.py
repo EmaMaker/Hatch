@@ -41,7 +41,7 @@ parser.add_option("--usecombo", dest="usecombo", help="Choose wether use a combo
 parser.add_option("--combolist", dest="combolist", help="Pass a whole combolist file")
 parser.add_option("--workers", dest="workers", help="Spawn # concurrent workers")
 parser.add_option("--succfile", dest="succfile", help="file used to store successfull accounts")
-parser.add_option("--chromedriver", dest="succfile", help="Path of Chrome Driver")
+parser.add_option("--chromedriver", dest="chromedriver", help="Path of Chrome Driver")
 (options, args) = parser.parse_args()
 
 banner = color.BOLD + color.RED + '''Universal account checker by EmaMaker, based on Hatch by Metachar'''.format(
@@ -84,8 +84,8 @@ banner = color.BOLD + color.RED + '''Universal account checker by EmaMaker, base
 if ((options.username is None or options.passlist is None) and (options.usecombo is None or bool(
         options.usecombo) == False)) or options.usernamesel is None or options.passsel is None or options.loginsel is None or options.website is None or (
         bool(options.usecombo) == True and options.combolist is None and options.chromedriver):
-    print(options.usecombo)
-    print('Some important arguments are missing')
+    print('Some important arguments are missing, run with -h or --help argument to get the help menu')
+    
     exit()
 
 if __name__ == "__main__":
