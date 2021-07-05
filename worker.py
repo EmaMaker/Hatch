@@ -1,13 +1,14 @@
-import sys
-import selenium
-import requests
-import time as t
-from selenium import webdriver
 import os
-from enum import Enum
+import sys
 import threading
-from selenium.webdriver.common.keys import Keys
+import time as t
+from enum import Enum
+
+import requests
+import selenium
+from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
+from selenium.webdriver.common.keys import Keys
 
 CHROME_DVR_DIR = '/usr/bin/chromedriver'
 succfile = os.getcwd() + "/accounts_successfull.txt"
@@ -92,9 +93,9 @@ class Worker(threading.Thread):
 
             sel_user.send_keys(username)
             sel_pas.send_keys(pass_list)
-            print '------------------------'
+            print ('------------------------')
             print (color.GREEN + 'Tried password: ' + color.RED + pass_list + color.GREEN + 'for user: ' + color.RED + username)
-            print '------------------------'
+            print ('------------------------')
             self.lastPass = pass_list
             self.lastUS = username
             t.sleep(1)
@@ -102,10 +103,10 @@ class Worker(threading.Thread):
         except KeyboardInterrupt:  # returns to account_checker menu if ctrl C is used
             exit()
         except selenium.common.exceptions.NoSuchElementException:
-            print 'AN ELEMENT HAS BEEN REMOVED FROM THE PAGE SOURCE THIS COULD MEAN 2 THINGS THE PASSWORD WAS FOUND OR YOU HAVE BEEN LOCKED OUT OF ATTEMPTS!'
-            print 'LAST PASS ATTEMPT BELLOW'
-            print color.GREEN + 'Password has been found: {0}'.format(self.lastPass)
-            print color.YELLOW + 'Have fun :)'
+            print('AN ELEMENT HAS BEEN REMOVED FROM THE PAGE SOURCE THIS COULD MEAN 2 THINGS THE PASSWORD WAS FOUND OR YOU HAVE BEEN LOCKED OUT OF ATTEMPTS!')
+            print('LAST PASS ATTEMPT BELLOW')
+            print(color.GREEN + 'Password has been found: {0}'.format(self.lastPass))
+            print(color.YELLOW + 'Have fun :)')
 
             # Foud a result, write it in the succesfull accounts file
             self.found = True

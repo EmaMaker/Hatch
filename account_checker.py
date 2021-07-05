@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 # Spotify account checker:
 # Works with username-password combo and single username and password list
 
@@ -121,7 +123,7 @@ if __name__ == "__main__":
 
     lines_per_worker = int(float(tot_lines) / float(workers) + 1)
 
-    print banner
+    print(banner)
 
     '''Splitting big file in multiple file for multiple workes:
     Code from here
